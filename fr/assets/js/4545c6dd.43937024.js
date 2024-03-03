@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation_v_2=self.webpackChunkdocumentation_v_2||[]).push([[9550],{1785:e=>{e.exports=JSON.parse('{"permalink":"/fr/blog/tags/docusaurus","page":1,"postsPerPage":4,"totalPages":1,"totalCount":4,"blogDescription":"Le blog de la coop\xe9rative Code Commun.","blogTitle":"Code Commun, le blog."}')}}]);
