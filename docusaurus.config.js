@@ -102,6 +102,11 @@ const config = {
                         type: 'localeDropdown',
                         position: 'right',
                     },
+		    {
+  			label: 'Devenir sociétaire',
+  			to: '/devenir-societaire',
+  			position: 'left',
+		    },
                     {
                         href: 'https://github.com/TiBillet',
                         label: 'GitHub',
