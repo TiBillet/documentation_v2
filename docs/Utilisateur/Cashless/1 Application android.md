@@ -2,7 +2,7 @@
 sidebar_position: 1
 slug: android
 title: Android application
-description: Android application available on https://nuage.tierslieux.re/s/BifbQGA3JCk6aH7
+description: Android application available on https://nuage.codecommun.coop/s/SdcdkDcWYRPETpf
 keywords: [cashless, billetterie, ticketing, android, application, app]
 wiktags: [cashless, billetterie, ticketing, android, application, app]
 authors: jonas
@@ -16,7 +16,7 @@ The application is not yet published on the Android, Apple, or FDroid Stores.
 
 It is available at the following address:
 
-https://nuage.tierslieux.re/s/BifbQGA3JCk6aH7
+https://nuage.codecommun.coop/s/SdcdkDcWYRPETpf
 
 Or scan this qrcode on a phone to visit the download page.
 

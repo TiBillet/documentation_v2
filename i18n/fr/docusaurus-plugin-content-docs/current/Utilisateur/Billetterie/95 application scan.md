@@ -16,7 +16,7 @@ TiBillet propose une application mobile de scan qui vous permet de vérifier et 
 
 Pour commencer, vous devez télécharger l'application mobile de scan :
 
-1. Rendez-vous sur [https://nuage.tierslieux.re/appscann](https://nuage.tierslieux.re/appscann)
+1. Rendez-vous sur [https://nuage.codecommun.coop/s/zaG9wqHBfjaqj38](https://nuage.codecommun.coop/s/zaG9wqHBfjaqj38)
 2. Téléchargez l'application pour votre appareil (Android)
 3. Installez l'application sur votre appareil
 
