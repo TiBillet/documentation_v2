@@ -77,6 +77,9 @@ function NewsletterSignup() {
             const script = document.createElement('script');
             script.src = "https://cdn.jsdelivr.net/ghost/signup-form@~0.2/umd/signup-form.min.js";
             script.async = true;
+            script.onerror = () => {
+                console.warn("Ghost signup form could not be loaded (it might be blocked by an ad-blocker)");
+            };
             script.setAttribute('data-background-color', '#08090c');
             script.setAttribute('data-text-color', '#FFFFFF');
             script.setAttribute('data-button-color', '#e93363');

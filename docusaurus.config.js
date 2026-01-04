@@ -19,7 +19,11 @@ const config = {
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
     scripts: [
-      {src: 'https://plausible.codecommun.co/js/script.js', defer: true, 'data-domain': 'tibillet.org'},
+      {
+        src: 'https://plausible.codecommun.co/js/script.manual.js',
+        defer: true,
+        'data-domain': 'tibillet.org'
+      },
       // Browser language detection script
       {
         src: '/js/detectBrowserLanguage.js',
@@ -49,6 +53,17 @@ const config = {
                     'https://matrix.to/#/#tibillet:tiers-lieux.org',
                 ],
             }),
+        },
+        // Plausible manual pageview tracking for SPA
+        {
+          tagName: 'script',
+          attributes: {},
+          innerHTML: `
+            window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };
+            document.addEventListener('DOMContentLoaded', function() {
+              plausible('pageview');
+            });
+          `,
         },
         // hreflang tags for better multilingual SEO
         {
