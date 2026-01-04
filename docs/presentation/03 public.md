@@ -32,7 +32,7 @@ Participating in a TiBillet collective means, for example :
 
 |                                      |                                      |
 |--------------------------------------|--------------------------------------|
-| **Join the collective**           | <img src={require('/static/img/icone_adhesion.png').default} width="100" /> |
+| **Join the collective**           | <img src={require('/static/img/mbs-icon.png').default} width="100" /> |
 | **Go to an event organized by the collective**  | <img src={require('/static/img/icone_evenement.png').default} width="100" /> |
 | **Buy something at a collective outlet** | <img src={require('/static/img/icone_achat.png').default} width="100" /> |
 | **Volunteering to help the collective** | <img src={require('/static/img/icone_volontariat.png').default} width="100" /> |

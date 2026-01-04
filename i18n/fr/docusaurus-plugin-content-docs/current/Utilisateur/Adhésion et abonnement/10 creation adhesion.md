@@ -35,9 +35,9 @@ Ces adhésions sont à créer dans la catégorie **"Produits"** dans la colonne 
   - Activez le bouton **"Archiver"** pour supprimer votre adhésion. 
 - **Enregistrez**.   
 
-![](/img/adhesion1.png)
-![](/img/adhesion2.png)
-![](/img/adhesion3.png)
+![](/img/mbs-1.png)
+![](/img/mbs-2.png)
+![](/img/mbs-3.png)
 
 Votre adhésion est maintenant visible en ligne sur **Lespass** dans la page **"Adhérer"**.
 

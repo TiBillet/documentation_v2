@@ -35,9 +35,9 @@ These memberships are to be created in the **"Products ‘** category in the lef
   - Activate the **"Archive ”** button to delete your membership.
 - **Save**
 
-![](/img/adhesion1.png)
-![](/img/adhesion2.png)
-![](/img/adhesion3.png)
+![](/img/mbs-1.png)
+![](/img/mbs-2.png)
+![](/img/mbs-3.png)
 
 Your membership is now visible online on **Lespass** in the **"Join ”** page.
 

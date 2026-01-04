@@ -38,7 +38,7 @@ Participer à un collectif TiBillet, c’est par exemple :
 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20}}>
   <p style={{ whiteSpace: 'nowrap', marginBottom: 0 }}>**Adhérer au collectif**</p>
   <img
-    src={require('/static/img/icone_adhesion.png').default}
+    src={require('/static/img/mbs-icon.png').default}
     alt="Boîte à outils"
     style={{ width: '10%' }}
   />

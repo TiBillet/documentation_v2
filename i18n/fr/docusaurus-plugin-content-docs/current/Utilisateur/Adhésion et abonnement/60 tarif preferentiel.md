@@ -20,6 +20,6 @@ Une fois les informations de l'onglet "Général" renseignées, allez dans l'ong
 - Activez **"Publier"** pour le rendre visible.  
 - **Enregistrez**.  
 
-![](/img/adhesion4.png)
-![](/img/adhesion5.png)
+![](/img/mbs-4.png)
+![](/img/mbs-5.png)
 

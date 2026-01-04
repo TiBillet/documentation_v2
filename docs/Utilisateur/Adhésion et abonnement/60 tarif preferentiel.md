@@ -20,6 +20,6 @@ Once you have completed the information in the “General” tab, go to the **"T
 - Activate **"Publish ”** to make it visible.  
 - **Save**.  
 
-![](/img/adhesion4.png)
-![](/img/adhesion5.png)
+![](/img/mbs-4.png)
+![](/img/mbs-5.png)
 

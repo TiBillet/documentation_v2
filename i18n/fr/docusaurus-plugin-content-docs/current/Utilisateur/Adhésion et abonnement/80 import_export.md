@@ -48,4 +48,4 @@ Attention a la façon dont on exporte les données avec Libre Office :
   - UTF8
   - Cocher uniquement "commande" -> c'est la virgule qui sépare les champs.
 
-![export adhésion](/img/exportadhesion.png)
+![export adhésion](/img/export-mbs.png)

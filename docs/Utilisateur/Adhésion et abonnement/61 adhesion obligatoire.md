@@ -16,8 +16,8 @@ authors: Adrienne
 - Click on this link to modify the rate used for members.  
 - Go to the **"Membership required ”** field (this will allow you to connect the membership with the reservation).  
 
-![](/img/adhesion6.png)
-![](/img/adhesion7.png)
-![](/img/adhesion8.png)
+![](/img/mbs-6.png)
+![](/img/mbs-7.png)
+![](/img/mbs-8.png)
 
 

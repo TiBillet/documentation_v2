@@ -16,8 +16,8 @@ authors: Adrienne
 - Cliquez sur ce lien pour modifier le tarif utilisé pour les adhérents.  
 - Allez dans le champ **"Adhésion obligatoire"** (cela vous permettra de connecter l'adhésion avec la réservation).  
 
-![](/img/adhesion6.png)
-![](/img/adhesion7.png)
-![](/img/adhesion8.png)
+![](/img/mbs-6.png)
+![](/img/mbs-7.png)
+![](/img/mbs-8.png)
 
 

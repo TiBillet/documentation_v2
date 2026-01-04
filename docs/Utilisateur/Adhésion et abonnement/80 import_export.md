@@ -48,4 +48,4 @@ Be careful how you export data with Libre Office:
   - UTF8
   - Check only “order” -> the comma separates the fields.
   
-![export adhésion](/img/exportadhesion.png)
+![export adhésion](/img/export-mbs.png)

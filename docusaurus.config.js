@@ -19,21 +19,63 @@ const config = {
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
     scripts: [
-      {
-        src: 'https://plausible.codecommun.co/js/script.manual.js',
-        defer: true,
-        'data-domain': 'tibillet.org'
-      },
       // Browser language detection script
       {
         src: '/js/detectBrowserLanguage.js',
         async: true,
+      },
+      // Plausible analytics
+      {
+        src: 'https://plausible.io/js/script.js',
+        defer: true,
+        'data-domain': 'tibillet.org',
       },
     ],
 
 
     // Structured data for better SEO
     headTags: [
+        // Error protection script against ad-blocker crashes
+        {
+          tagName: 'script',
+          attributes: {},
+          innerHTML: `
+            (function() {
+              // Protection against infinite recursion of getBoundingClientRect
+              // which happens when ad-blockers hide elements (zero height).
+              // We add it to document to stop the recursive upward traversal.
+              if (typeof document !== 'undefined') {
+                if (!document.getBoundingClientRect) {
+                  document.getBoundingClientRect = function() {
+                    return {top: 0, bottom: 1, left: 0, right: 0, width: 0, height: 1, x: 0, y: 0};
+                  };
+                }
+              }
+
+              // Global interception of getBoundingClientRect related errors
+              window.addEventListener('error', function(event) {
+                if (event.message && (event.message.indexOf('getBoundingClientRect') !== -1 || event.message.indexOf('getClientRects') !== -1)) {
+                  console.warn('Blocked a crash in positioning script:', event);
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+              }, true);
+
+              // Preventive shielding of Element prototype
+              if (typeof Element !== 'undefined' && Element.prototype) {
+                const originalGBCR = Element.prototype.getBoundingClientRect;
+                Element.prototype.getBoundingClientRect = function() {
+                  try {
+                    return originalGBCR.apply(this, arguments);
+                  } catch (e) {
+                    console.warn('Intercepted Element.getBoundingClientRect error:', e);
+                    return {top: 0, bottom: 1, left: 0, right: 0, width: 0, height: 1, x: 0, y: 0};
+                  }
+                };
+              }
+            })();
+          `,
+        },
         {
             tagName: 'script',
             attributes: {
@@ -53,17 +95,6 @@ const config = {
                     'https://matrix.to/#/#tibillet:tiers-lieux.org',
                 ],
             }),
-        },
-        // Plausible manual pageview tracking for SPA
-        {
-          tagName: 'script',
-          attributes: {},
-          innerHTML: `
-            window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };
-            document.addEventListener('DOMContentLoaded', function() {
-              plausible('pageview');
-            });
-          `,
         },
         // hreflang tags for better multilingual SEO
         {
@@ -119,7 +150,6 @@ const config = {
     },
 
     markdown: {
-        mermaid: true,
         hooks : {
             onBrokenMarkdownLinks: 'warn',
         }
