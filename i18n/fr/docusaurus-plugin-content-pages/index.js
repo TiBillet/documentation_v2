@@ -11,6 +11,23 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 
+function ArchiveBanner() {
+    return (
+        <div className="container margin-top--md">
+            <div className="alert alert--warning" role="alert" style={{textAlign: 'center'}}>
+                <p className="margin-bottom--sm">
+                    <Translate id="homepage.archive.banner">
+                        This page is archived. The new documentation is being written collaboratively on TiBillet.org.
+                    </Translate>
+                </p>
+                <Link className="button button--warning button--sm" to="https://tibillet.org/">
+                    tibillet.org
+                </Link>
+            </div>
+        </div>
+    );
+}
+
 function HeroBanner() {
     return (
         <div className={clsx(styles.announcement, styles.announcementDark)}>
@@ -120,6 +137,7 @@ export default function Home() {
             title={`${siteConfig.title}`}
             description="Outils libres fédérés pour : Adhésion, billetterie, caisse enregistreuse et cashless.">
             <main>
+                <ArchiveBanner/>
                 <HeroBanner/>
                 <HomepageFeatures2/>
                 <NewsletterSignup/>

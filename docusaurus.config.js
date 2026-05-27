@@ -14,21 +14,15 @@ const config = {
     favicon: 'img/design/favicon.svg',
 
     // Set the production url of your site here
-    url: 'https://tibillet.github.io/documentation_v2/',
+    url: 'https://tibillet.github.io',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: '/',
+    baseUrl: '/documentation_v2/',
     scripts: [
       // Browser language detection script
       {
-        src: '/js/detectBrowserLanguage.js',
+        src: '/documentation_v2/js/detectBrowserLanguage.js',
         async: true,
-      },
-      // Plausible analytics
-      {
-        src: 'https://plausible.io/js/script.js',
-        defer: true,
-        'data-domain': 'github.io',
       },
     ],
 

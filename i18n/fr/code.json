@@ -3,6 +3,9 @@
     "message": "<b>Adhésion</b>, billetterie, <b>caisse enregistreuse</b> et <b>outils</b> libres et fédérés.",
     "description": "Titre"
   },
+  "homepage.archive.banner": {
+    "message": "Cette page est archivée. La nouvelle documentation est en cours d'écriture collaborative sur TiBillet.org."
+  },
   "To know more": {
     "message": "En savoir plus"
   },
